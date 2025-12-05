@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Stock Grant Evaluation</h1>
+    <form id="share-math-form">
+      <div>
+        <h4>Grant Details</h4>
+        <p>Information you should get during negotiation</p>
+        <label for="num-diluted-shares">Number of Total Diluted Shares</label>
+        <input
+          type="text"
+          id="num-diluted-shares"
+          placeholder="Number of Total Diluted Shares"
+        />
+        <br />
+        <label for="num-shares">Number of Shares Owned</label>
+        <input type="text" id="num-shares" placeholder="Number of Shares Owned" />
+        <br />
+        <label for="strike-price">Grant Strike Price ($)</label>
+        <input type="text" id="strike-price" placeholder="Strike Price ($)" />
+        Strike Price = Fair Market Value = company valuation / # fully diluted
+        shares
+        <br />
+        <h4>Exit Scenario</h4>
+        <label for="valuation">Valuation ($)</label>
+        <input type="text" id="valuation" placeholder="Valuation ($)" />
+        <br />
+        <label for="revenue">Revenue, Yearly ($)</label>
+        <input type="text" id="revenue" placeholder="Yearly Revenue ($)" />
+        <br />
+        <br />
+        <button type="button" id="calculate">Calculate</button>
+      </div>
+    </form>
+    <hr>
+    <div id="results"></div>
+  </body>
+</html>
