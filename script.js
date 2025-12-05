@@ -21,9 +21,12 @@
       description: "Revenue Multiple",
       subDescription: "Is this a good bet?",
       type: "number",
-      explanation: `An acquisition is more realistic when the Revenue Multiple is low; a smaller differential between revenue and value means the purchaser is more likely to make a return on their investment.
-            Benchmark this multiple against companies in the same industry/business and at the same stage of growth.
-            As a general rule, a 10+ multiplier indicates a bet on a major growth company.`,
+      explanation: `Generally:
+      <br>
+      <br>1) An acquisition is more realistic when the Revenue Multiple is low; a smaller difference between revenue and value means the purchaser is more likely to make a return on their investment
+      <br>2) A 10+ multiplier indicates a bet on a major growth company
+      <br><br>
+      Benchmark this multiple against companies in the same industry/business and at the same stage of growth.`,
     },
   };
 
