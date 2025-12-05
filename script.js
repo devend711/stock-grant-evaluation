@@ -116,10 +116,7 @@
         results.innerHTML = resultsHtml;
     }
 
-    function init() {
-        const calculateButton = document.getElementById('calculate');
-
-        // Load and populate saved values
+    function prepopulateInputs() {
         inputIds.forEach(inputId => {
             const input = document.getElementById(inputId);
             if (input) {
@@ -127,14 +124,13 @@
                 if (savedValue) {
                     input.value = savedValue;
                 }
-                // Save value when it changes
-                input.addEventListener('input', function() {
-                    saveValue(inputId, this.value);
-                });
             }
         });
+    }
 
-
+    function init() {
+        prepopulateInputs();
+        const calculateButton = document.getElementById('calculate');
         calculateButton.addEventListener('click', calculate);
         calculate();
     }
